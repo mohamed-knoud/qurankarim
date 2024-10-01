@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#top{
+    height: auto;
+    background-color: rgba(30, 30, 248, 0.322);
+    text-align: center;
+    font-size: 1.9em;
+    color:#fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+
+#arr{
+    position: absolute;
+    right:50px;
+    top:50px;
+    cursor:pointer;
+}
+
+#arl{
+    position: absolute;
+    left:50px;
+    top:50px;
+    cursor:pointer;
+}
+
+/* Apply styles for screens with a maximum width of 600px */
+@media screen and (max-width: 700px) {
+    /* Your CSS styles here */
+    #arr,#arl{
+        top:500px;
+        color:rgba(30, 30, 248, 0.322);
+    }
+}
+
+/* Basic styling for the select element */
+select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Style the arrow icon */
+  select::-ms-expand {
+    display: none;
+  }
+
+  /* Style for the arrow icon in other browsers */
+  select::-webkit-select-arrow {
+    display: none;
+  }
+
+  /* Custom styling for the selected option */
+  select option:checked {
+    background-color: #3498db;
+    color: #fff;
+  }
