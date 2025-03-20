@@ -24,7 +24,7 @@ fetch('https://api.quran.com/api/v4/chapter_recitations/1?language=en')
 })
 .then(function(data) {
     // Handle the JSON data here
-    // console.log(audio);
+    console.log(audio);
     audio = data.audio_files
     
 })
@@ -48,7 +48,7 @@ fetch('https://api.quran.com/api/v4/chapters?language=en')
     })
     .then(function(data) {
         // Handle the JSON data here
-        // console.log(data);
+        console.log(data);
     data.chapters.forEach((surat,index)=>{
         let opt = document.createElement('option')
         // let a = document.createElement('a')
